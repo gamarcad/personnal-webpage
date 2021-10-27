@@ -1,0 +1,13 @@
+
+title: Gael Marcadet
+photo: photo.jpg
+username: Gael Marcadet
+user_title: Ph.D Student
+email: gael.marcadet@limos.fr
+git: https://github.com/gamarcad
+icons:
+  - limos.png
+  - uca.png
+
+exclude: ['package.json', 'src' , 'node_modules']
+incremental: false

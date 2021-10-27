@@ -1,0 +1,73 @@
+<div class="user-details">
+  <h1>About Me</h1>
+  <p class="about">
+    I am Ph.D student at <a class="link" href="limos.fr">Laboratoire d'Informatique Fondamentale</a> at <a href="uca.fr">Université Clermont-Auvergne</a> in Network and Security departement.
+    My current research are focused on distributed secure computations, where several agents communicate in order to produce a result in a secure way.
+    
+    My Ph.D Supervisor is <a href="https://sancy.iut-clermont.uca.fr/~lafourcade/">Pascal Lafourcade</a> who is HDR Lecturer in Security.
+  </p>
+</div>
+
+
+<div class="user-details">
+  <h1>Publications</h1>
+  <div class="papers">
+    {% for paper in site.data.papers %}
+      <div class="container paper">
+        <div class="title">
+          <div class="left">Title</div>
+          <div class="right">
+            {{paper.title}}
+          </div>
+        </div>
+        <div class="authors">
+          <div class="left">Authors</div>
+          <div class="right">
+            {% for authorId in paper.authors %}
+              {% for author in site.data.authors %}
+                {% if author.id == authorId %}
+                  <a href="{{author.url}}">{{ author.name }}</a>,
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          </div>
+        </div>
+        <div class="status">
+          <div class="left">Status</div>
+          <div class="right">
+            {{paper.status}}
+          </div>
+        </div>
+        <div class="abstract">
+          <div class="left">Abstract</div>
+          <div class="right">
+            {{paper.abstract | truncate: 200 }}
+          </div>
+        </div>
+       
+      </div>
+    {% endfor %}
+</div>
+
+<div class="user-details">
+  <h1>Events</h1>
+  <div class="events">
+    {% for event in site.data.events %}
+        <div class="container event">
+          <div class="title">
+            <div class="left">Title</div>
+            <div class="right">
+              {{event.name}}
+            </div>
+          </div>
+          <div class="data">
+            <div class="left">Date</div>
+            <div class="right">
+              {{event.date }}
+            </div>
+          </div>
+        </div>
+    {% endfor %}
+</div>
+
+</div>
