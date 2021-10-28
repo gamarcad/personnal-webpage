@@ -4,7 +4,9 @@
     I am Ph.D student at <a class="link" href="limos.fr">Laboratoire d'Informatique de Modélisation et d'Optimisation des Systèmes (LIMOS)</a> at <a href="uca.fr">Université Clermont-Auvergne</a> in Network and Security departement.
     My current research is focused on distributed secure computations, where several agents communicate in order to produce a result in a secure way.
     
-    My Ph.D Supervisor is <a href="https://sancy.iut-clermont.uca.fr/~lafourcade/">Pascal Lafourcade</a> who is HDR Lecturer in Security.
+    My Ph.D Director is <a href="https://sancy.iut-clermont.uca.fr/~lafourcade/">Pascal Lafourcade</a> who is MCF HDR specialized in security and cryptography.
+    My Supervisors are <a href="https://lig-membres.imag.fr/ciucanu/">Radu Ciucanu</a> HDR MCF and <a href="https://lig-membres.imag.fr/soare/">Marta Soare</a> MCF, working at 
+    <a href="https://www.liglab.fr/en">Laboratoire d'Informatique de Grenoble (LIG)</a>.
   </p>
 </div>
 
@@ -49,6 +51,38 @@
     {% endfor %}
 </div>
 
+<div class="user-details" id="teaching">
+  <h1>Teaching</h1>
+  {% for teaching in site.data.teaching %}
+  <div class="container event">
+    <div class="title">
+      <div class="left">Module</div>
+      <div class="right">
+        {{teaching.module}}
+      </div>
+    </div>
+    <div class="title">
+      <div class="left">Type</div>
+      <div class="right">
+        {{teaching.type}}
+      </div>
+    </div>
+    <div class="data">
+      <div class="left">Level</div>
+      <div class="right">
+        {{teaching.level}}
+      </div>
+    </div>
+    <div class="data">
+      <div class="left">Hours</div>
+      <div class="right">
+        {{teaching.hours}}h
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
 <div class="user-details">
   <h1>Events</h1>
   <div class="events">
@@ -60,10 +94,22 @@
               {{event.name}}
             </div>
           </div>
+          <div class="title">
+            <div class="left">Role</div>
+            <div class="right">
+              {{event.role}}
+            </div>
+          </div>
           <div class="data">
             <div class="left">Date</div>
             <div class="right">
               {{event.date }}
+            </div>
+          </div>
+          <div class="data">
+            <div class="left">Details</div>
+            <div class="right">
+              {{event.details}}
             </div>
           </div>
         </div>

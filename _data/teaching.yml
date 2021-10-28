@@ -1,0 +1,17 @@
+- module: C Programming
+  type: TP
+  level: Licence 1
+  hours: 22.5
+
+
+- module: Oriented Object Programming
+  type: TD
+  level: Licence 2
+  hours: 12
+
+- module: Oriented Object Programming
+  type: TP
+  level: Licence 2
+  hours: 27
+
+
