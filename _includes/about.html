@@ -1,20 +1,24 @@
 <div class="user-details">
   <h1>About Me</h1>
   <p class="about">
-    I am Ph.D student at <a class="link" href="limos.fr">Laboratoire d'Informatique de Modélisation et d'Optimisation des Systèmes (LIMOS)</a> at <a href="uca.fr">Université Clermont-Auvergne</a> in Network and Security departement.
-    My current research is focused on distributed secure computations, where several agents communicate in order to produce a result in a secure way.
-    
-    My Ph.D Director is <a href="https://sancy.iut-clermont.uca.fr/~lafourcade/">Pascal Lafourcade</a> who is MCF HDR specialized in security and cryptography.
-    My Supervisors are <a href="https://lig-membres.imag.fr/ciucanu/">Radu Ciucanu</a> HDR MCF and <a href="https://lig-membres.imag.fr/soare/">Marta Soare</a> MCF, working at 
+    I am Ph.D student at <a class="link" target="_blank" href="https://limos.fr">Laboratoire d'Informatique de Modélisation et d'Optimisation des Systèmes (LIMOS)</a> at <a href="uca.fr">Université Clermont-Auvergne</a> in Network and Security departement.
+    My current research is focused on distributed secure computations, where several agents communicate in order to produce a result without learn additionnal data.
+  </p>
+  <div class="seperator"></div>
+  <p class="about">
+    My Ph.D Supervisor is <a target="_blank" href="https://sancy.iut-clermont.uca.fr/~lafourcade/">Pascal Lafourcade</a> working at <a target="_blank" href="https://limos.fr">LIMOS</a> and my
+    Co-Supervisors are <a href="https://lig-membres.imag.fr/ciucanu/">Radu Ciucanu</a> and <a href="https://lig-membres.imag.fr/soare/">Marta Soare</a>, working at 
     <a href="https://www.liglab.fr/en">Laboratoire d'Informatique de Grenoble (LIG)</a>.
   </p>
 </div>
 
 
+
 <div class="user-details">
   <h1>Publications</h1>
   <div class="papers">
-    {% for paper in site.data.papers %}
+    {% for paper in site.data.paper s%}
+      {% if paper.published %}
       <div class="container paper">
         <div class="title">
           <div class="left">Title</div>
@@ -34,20 +38,8 @@
             {% endfor %}
           </div>
         </div>
-        <div class="status">
-          <div class="left">Status</div>
-          <div class="right">
-            {{paper.status}}
-          </div>
-        </div>
-        <div class="abstract">
-          <div class="left">Abstract</div>
-          <div class="right">
-            {{paper.abstract | truncate: 200 }}
-          </div>
-        </div>
-       
       </div>
+      {% endif %}
     {% endfor %}
 </div>
 

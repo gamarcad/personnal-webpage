@@ -1,17 +1,20 @@
 - module: C Programming
   type: TP
   level: Licence 1
+  year: 2021
   hours: 22.5
 
 
 - module: Oriented Object Programming
   type: TD
   level: Licence 2
+  year: 2021
   hours: 12
 
 - module: Oriented Object Programming
   type: TP
   level: Licence 2
+  year: 2021
   hours: 27
 
 
