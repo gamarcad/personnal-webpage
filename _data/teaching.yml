@@ -2,19 +2,19 @@
   type: TP
   students: UCA - Licence 1
   year: 2021
-  hours: 22.5
+  hours: 22h30
 
 
 - module: Oriented Object Programming
   type: TD
   students: UCA - Licence 2
   year: 2021
-  hours: 12
+  hours: 12h
 
 - module: Oriented Object Programming
   type: TP
   students: UCA - Licence 2
   year: 2021
-  hours: 27
+  hours: 27h
 
 
