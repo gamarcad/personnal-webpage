@@ -1,7 +1,22 @@
 - title: SAMBA A Generic Framework for Secure Federated Multi-Armed Bandits
-  submitted: false
+  link: https://lig-membres.imag.fr/ciucanu/preprints/CLMS22.pdf
+  type: Long Paper
+  submitted: true
+  journal: Journal of Artificial Intelligence
   authors:
+    - radu-ciucanu
+    - pascal-lafourcade
+    - gael-marcadet
+    - marta-soare
+
+- title: SAMBA A System for Secure Federated Multi-Armed Bandits
+  link:  https://icde2022.ieeecomputer.my/demo-accepted-papers/
+  type: Demo
+  submitted: true
+  conference: International Conference on Data Engineering
+  authors:
+    - gael-marcadet
+    - radu-ciucanu
     - pascal-lafourcade
     - marta-soare
-    - radu-ciucanu
-    - gael-marcadet
+    - sihem-amer-yahia

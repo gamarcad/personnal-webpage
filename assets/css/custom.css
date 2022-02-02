@@ -58,6 +58,14 @@ a {
 }
 
 
+.type {
+    font-size: 10px;
+}
+
+.author {
+    margin-right: 10px;
+}
+
 @media screen and (max-width: 600px) {
 
     

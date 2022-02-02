@@ -2,7 +2,7 @@
   <h1>About Me</h1>
   <p class="about">
     I am Ph.D student at <a class="link" target="_blank" href="https://limos.fr">Laboratoire d'Informatique de Modélisation et d'Optimisation des Systèmes (LIMOS)</a> at <a href="uca.fr">Université Clermont-Auvergne</a> in Network and Security departement.
-    My current research is focused on distributed secure computations, where several agents communicate in order to produce a result without learn additionnal data.
+    My current research is focused on distributed secure computations, where several agents communicate in order to produce a result without learn additional data.
   </p>
   <div class="seperator"></div>
   <p class="about">
@@ -17,29 +17,49 @@
 <div class="user-details">
   <h1>Publications</h1>
   <div class="papers">
-    {% for paper in site.data.paper s%}
-      {% if paper.published %}
+    {% for paper in site.data.papers %}
       <div class="container paper">
         <div class="title">
           <div class="left">Title</div>
           <div class="right">
-            {{paper.title}}
+            {% if paper.link %}
+              <a href="{{ paper.link}}">{{paper.title}} </a>
+            {% else %}
+                {{paper.title}}
+            {% endif %}
+            {% if paper.type %}
+                <span class="type">({{paper.type}})</span> 
+            {% endif %}
           </div>
         </div>
+        {% if paper.conference %}
+          <div class="venue">
+            <div class="left">Conference</div>
+            <div class="right">{{paper.conference}}</div>
+          </div>
+        {% endif %}
+        {% if paper.journal %}
+        <div class="venue">
+          <div class="left">Journal</div>
+          <div class="right">{{paper.journal}}</div>
+        </div>
+      {% endif %}
         <div class="authors">
           <div class="left">Authors</div>
           <div class="right">
             {% for authorId in paper.authors %}
               {% for author in site.data.authors %}
                 {% if author.id == authorId %}
-                  <a href="{{author.url}}">{{ author.name }}</a>,
+                  <span class="author">
+                    <a href="{{author.url}}">{{ author.name }}</a>
+                  </span>
+                  
                 {% endif %}
               {% endfor %}
             {% endfor %}
           </div>
         </div>
       </div>
-      {% endif %}
     {% endfor %}
 </div>
 
