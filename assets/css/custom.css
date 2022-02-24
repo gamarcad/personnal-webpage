@@ -68,6 +68,17 @@ a {
 
 @media screen and (max-width: 600px) {
 
+    body {
+        background-color: rgb(236, 236, 236);
+    }
+    .container {
+        border: 1px solid rgb(206, 206, 206);
+        padding: 10px;
+        box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-bottom: 1em;
+        background: white;
+    } 
     
 
     .container div {
@@ -82,6 +93,11 @@ a {
 
     .right {
         text-align: left;
+    }
+
+    
+    .paper .title .left {
+       display: none;
     }
 
     .paper .authors .right {
