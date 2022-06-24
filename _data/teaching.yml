@@ -1,11 +1,11 @@
-- module: C Programming
+- module: C Programming 
   type: TP
   students: UCA - Licence 1
   year: 2021
   hours: 22h30
 
 
-- module: Oriented Object Programming
+- module: Oriented Object Programming 
   type: TD
   students: UCA - Licence 2
   year: 2021
@@ -16,5 +16,18 @@
   students: UCA - Licence 2
   year: 2021
   hours: 27h
+
+- module: Sécurité des Systèmes d'Informations
+  type: TD/TP
+  students: Master 2 Euro
+  year: 2022
+  hours: 12h
+
+- module: Base de Données
+  type: TD/TP
+  students: IUT Second Year
+  year: 2022
+  hours: 22h
+
 
 
