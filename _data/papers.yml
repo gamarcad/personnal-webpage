@@ -22,7 +22,7 @@
     - marta-soare
     - sihem-amer-yahia
 
-- title: RMC-PVC
+- title: "RMC-PVC: A Multi-Client Reusable Verifiable Computation Protocol"
   type: Long Paper
   submitted: true
   journal: SAC 23
