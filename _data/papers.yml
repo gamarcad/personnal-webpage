@@ -21,3 +21,12 @@
     - pascal-lafourcade
     - marta-soare
     - sihem-amer-yahia
+
+- title: RMC-PVC
+  type: Long Paper
+  submitted: true
+  journal: SAC 23
+  authors:
+    - pascal-lafourcade
+    - gael-marcadet
+    - leo-robert
