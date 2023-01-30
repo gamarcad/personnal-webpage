@@ -1,14 +1,3 @@
-- title: test 
-   link: https://www.jair.org/index.php/jair/article/view/13163
-   type: Long Paper
-   submitted: true
-   journal: Journal of Artificial Intelligence Research
-   authors:
-     - radu-ciucanu
-     - pascal-lafourcade
-     - gael-marcadet
-     - marta-soare
- 
 - title: SAMBA A Generic Framework for Secure Federated Multi-Armed Bandits
   link: https://www.jair.org/index.php/jair/article/view/13163
   type: Long Paper
