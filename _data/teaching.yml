@@ -21,13 +21,19 @@
   type: TD/TP
   students: Master 2 Euro
   year: 2022
-  hours: 12h
+  hours: 10h
 
-- module: Base de Données
-  type: TD/TP
-  students: IUT Second Year
+- module: Oriented Object Programming 
+  type: TP
+  students: UCA - Licence 2
   year: 2022
-  hours: 22h
+  hours: 27h
+
+- module: Projet Informatique 
+  type: TD
+  students: UCA - Licence 1
+  year: 2022
+  hours: 24h
 
 
 
